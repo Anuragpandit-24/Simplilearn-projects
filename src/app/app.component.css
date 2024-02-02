@@ -1,0 +1,52 @@
+/* app.component.css */
+
+div {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  input[type="button"],
+  input[type="submit"],
+  button {
+    padding: 8px 16px;
+    margin: 8px 0;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Hide form initially */
+  div > div {
+    display: none;
+  }
+  
+  /* Display form when showAddForm is true */
+  div > div[ngIf] {
+    display: block;
+  }
+  

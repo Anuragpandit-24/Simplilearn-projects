@@ -1,0 +1,54 @@
+/* employeelist.component.css */
+
+div {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h3 {
+    color: #4CAF50; /* Green color for heading */
+  }
+  
+  p {
+    margin-bottom: 8px;
+  }
+  
+  input[type="button"] {
+    padding: 8px 16px;
+    margin-right: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  /* Style for "Delete" button in red color */
+  input[value="Delete"] {
+    background-color: #FF5252; /* Red color */
+    color: white;
+  }
+  
+  /* Style for "Employee List" button in blue color */
+  input[value="Employee List"] {
+    background-color: #3498DB; /* Blue color */
+    color: white;
+  }
+  
+  /* Style for "Update" button in grey color */
+  input[value="Update"] {
+    background-color: #BDC3C7; /* Grey color */
+    color: white;
+  }
+  
+  /* Additional styling for the "Update Form" section */
+  div > div[ngIf="f2"] {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: #ECF0F1; /* Light grey background */
+    border: 1px solid #BDC3C7;
+    border-radius: 4px;
+  }
+  
+  h2 {
+    color: #34495E; /* Dark grey color for heading */
+  }
+  

@@ -1,0 +1,42 @@
+<div>
+    <input type="button" value="Add Employee" (click)="showAddForm = true" />
+    <div *ngIf="showAddForm">
+      <form (submit)="addEmployee()">
+        <label>ID:</label>
+        <input type="text" [(ngModel)]="newEmployee.id" />
+        <br />
+  
+        <label>First Name:</label>
+        <input type="text" [(ngModel)]="newEmployee.first_name" />
+        <br />
+  
+        <label>Last Name:</label>
+        <input type="text" [(ngModel)]="newEmployee.last_name" />
+        <br />
+  
+        <label>Email:</label>
+        <input type="text" [(ngModel)]="newEmployee.email" />
+        <br />
+  
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+  
+    <table>
+      <tr>
+        <th>S.No</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Id</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let employee of employees">
+        <td>{{employee.id}}</td>
+        <td>{{employee.first_name}}</td>
+        <td>{{employee.last_name}}</td>
+        <td>{{employee.email}}</td>
+        <td><button (click)="viewDetails(employee.id)">View Details</button></td>
+      </tr>
+    </table>
+  </div>
+  
